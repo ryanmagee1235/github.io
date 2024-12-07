@@ -127,7 +127,7 @@ section {
 }
 #experience, #education, #skills, #awards, #references {
   border: 2px solid black;
-  width: 70%;
+  width: 100%;
   padding: 10px;
   border-radius: 5px;
   margin-bottom:20px;
