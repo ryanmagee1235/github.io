@@ -1,86 +1,92 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head> 
-  <meta name = "viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <section id="header-nav-container">
     <header>
-    <h1>Ryan Magee</h1><br>
-    <p>ryanmagee1235@gmail.com | (913)909-8362 | Insert Address Here</p>
+      <h1>Ryan Magee</h1>
+      <p>ryanmagee1235@gmail.com | (913)909-8362 | Insert Address Here</p>
     </header>
 
-    <nav aria-label = "Helpful Links">
-      Links to get back!
-      <ul>
-        <li><a href = "index.html" tabindex ="0">About</a></li>
-        <li><a href = "myresume.html" tabindex ="0">Resume</a></li>
-        <li><a href = "hobbies.html" tabindex ="0">Hobbies</a></li>
-      </ul>
+    <nav>
+      <div class="dropdown">
+        <button id="myBtn" class="dropbtn">Helpful Links</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="index.html">About</a>
+          <a href="myresume.html">Resume</a>
+          <a href="hobbies.html">Hobbies</a>
+        </div>
+      </div>
     </nav>
   </section>
 
-  <main id= "about-main">
+  <main id="about-main">
     <section id="experience">
       <h3>Experience</h3>
       <ul>
-        <li><b>Spring Venture Group</b>, Kansas City, MO - <i>Sales Manager</i><br>
-        June 2017 - June 2021<br>
-        Working with and developing both tenured sales agents and new agents in fundamental sales skills while maintaining 130%+ of production goals.
-        Actively selling and maintaining the goal of top 10% in the company.</li>
-
-        <li><b>Shamrock Trading Corporation</b>, Overland Park, KS - <i>Sales Trainer</i><br>
-        June 2021 - PRESENT<br>
-        Train and mentor new sales reps on their sales process as well as the basic knowledge of the industry to help build a successful book of business.</li>
+        <li>
+          <b>Spring Venture Group</b>, Kansas City, MO - <i>Sales Manager</i><br>
+          June 2017 - June 2021<br>
+          Working with and developing both tenured sales agents and new agents in fundamental sales skills while maintaining 130%+ of production goals.
+          Actively selling and maintaining the goal of top 10% in the company.
+        </li>
+        <li>
+          <b>Shamrock Trading Corporation</b>, Overland Park, KS - <i>Sales Trainer</i><br>
+          June 2021 - PRESENT<br>
+          Train and mentor new sales reps on their sales process as well as the basic knowledge of the industry to help build a successful book of business.
+        </li>
       </ul>
     </section>
   
-    <section id= "education">
+    <section id="education">
       <h3>Education</h3>
-      <p><b>Pittsburg State University</b>, Pittsburg, KS - <i>Business Administration</i><br>
-      May 2013 - May 2017<br>
-      <b>Kansas State University</b>, Manhattan, KS - <i>Computer Science</i><br>
-      May 2013 - May 2017
+      <p>
+        <b>Pittsburg State University</b>, Pittsburg, KS - <i>Business Administration</i><br>
+        May 2013 - May 2017<br>
+        <b>Kansas State University</b>, Manhattan, KS - <i>Computer Science</i><br>
+        May 2013 - May 2017
       </p>
     </section>
 
-    <section id= "skills">
+    <section id="skills">
       <h3>Skills</h3>
-      
       <table>
-      <tr>
-        <td>Microsoft Suite</td>
-        <td>WEBPAGE DEVELOPMENT!</td>
-        <td>Goal Setting</td>
-      </tr>  
-      <tr>
-        <td>Salesforce User</td>
-        <td>Sales Training </td>
-        <td>Sales knowledge</td>
-      </tr>
-      </Table>
-    </section>
-
-    <section id= "awards">
-      <h3>Awards</h3>
-      
-      <table>
-      <tr>
-        <td>Top Sales Team</td>
-        <td>Culture Impact</td>
-        <td>Best Dressed</td>
-      </tr>  
-      <tr>
-        <td>Top 10% in Sales 2018</td>
-        <td>Top 5% in Sales 2019</td>
-        <td>Voted Most Likely to be President in Elementary School </td>
-      </tr>
+        <tr>
+          <td>Microsoft Suite</td>
+          <td>WEBPAGE DEVELOPMENT!</td>
+          <td>Goal Setting</td>
+        </tr>  
+        <tr>
+          <td>Salesforce User</td>
+          <td>Sales Training</td>
+          <td>Sales Knowledge</td>
+        </tr>
       </table>
     </section>
-    <section id= "references">
+
+    <section id="awards">
+      <h3>Awards</h3>
+      <table>
+        <tr>
+          <td>Top Sales Team</td>
+          <td>Culture Impact</td>
+          <td>Best Dressed</td>
+        </tr>  
+        <tr>
+          <td>Top 10% in Sales 2018</td>
+          <td>Top 5% in Sales 2019</td>
+          <td>Voted Most Likely to be President in Elementary School</td>
+        </tr>
+      </table>
+    </section>
+    
+    <section id="references">
       <h3>References</h3>  
       <ol>
         <li>Mike Wilson (Insert Number Here) - Sales Director</li>
@@ -88,10 +94,21 @@
       </ol>
     </section>
   </main>
+
   <footer>
-    This is the footer for my page, rather than adding information, i'd rather direct you back to the about page
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#footerText" aria-expanded="false" aria-controls="footerText">
+      Toggle Footer Content
+    </button>
+    <div id="footerText" class="collapse">
+      <p>Rather than adding information, I'd rather direct you back to the about page.</p>
+    </div>
   </footer>
 
-</body>
 
+  <script>
+    document.getElementById("myBtn").onclick = function () {
+      document.getElementById("myDropdown").classList.toggle("show");
+    };
+  </script>
+</body>
 </html>
