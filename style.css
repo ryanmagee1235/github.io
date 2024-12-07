@@ -1,23 +1,18 @@
 body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
-  margin:2%
+  margin: 2%;
 }
-
-footer, main, section, nav {
+header, footer, main, section, nav {
   box-sizing: border-box;
   border-radius: 25px;
   padding: 1%;
-  margin: 0 0 2%
-  font: 16px;
-  font-style: bold;
+  margin-bottom: 2%;
 }
-
 header {
   background-color: darkgreen;
   text-align: center;
   color: white;
   padding: 30px;
-  border-radius: 25px;
   margin: 20px auto;
   width: 90%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -25,127 +20,90 @@ header {
 footer {
   background-color: black;
   color: white;
-  font-style:italic;
+  font-style: italic;
   text-align: center;
 }
-.dropbtn {
-  background-color: green;
+.dropbtn, .btn-success {
+  background-color: lightgreen;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
-  cursor: pointer;
   border-radius: 10px;
+  cursor: pointer;
 }
-
-.dropbtn:hover, .dropbtn:focus {
-  background-color: darkgreen;
+.dropbtn:hover, .dropbtn:focus, .btn-success:hover {
+  background-color: lightgreen;
 }
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  text-align: center;
-}
-
 .dropdown-content {
-  display: none; 
+  display: none;
   position: absolute;
   background-color: white;
   min-width: 160px;
-  overflow: auto;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  z-index:1;
+  z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
 .dropdown-content a:hover {
   background-color: white;
 }
-
 .show {
-  display: block; 
-}
-
-main{
-  background: linear-gradient(to left, gold, green);
   display: block;
-  padding: 0;
-  margin: 0 auto;
-  width: 100%;
 }
-#about-main{
-  width: 80%;
-  margin: 0 auto;
+main {
   background: linear-gradient(to left, gold, green);
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#about-main, #about-me {
+  width: 80%;
+  margin: 10px auto;
   padding: 20px;
   border-radius: 15px;
-  text-align: left;
   box-sizing: border-box;
 }
 
+#about-main {
+  background: linear-gradient(to left, gold, green);
+  text-align: left;
+}
 #about-me {
-  width: 80%;
-  font-weight: bold;
-  margin: 10px auto;
   background-color: white;
-  display: block;
-  padding: 20px;
-  border-radius: 15px;
   text-align: center;
-  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out; 
+  font-weight: bold;
+  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out;
 }
-
 #about-me:hover {
-  transform: scale(1.2); 
-  background-color: yellow; 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.2);
+  background-color: yellow;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-
-#image-container {
-  text-align: center;
-}
-img {
-  width: 150px;
-  height: 150px;
-  margin: 0;
-}
-
 section {
-  
   padding: 15px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  margin: 20px 0;
   border-radius: 10px;
-  width: 28%;
   box-sizing: border-box;
 }
 #experience, #education, #skills, #awards, #references {
   border: 2px solid black;
   width: 100%;
   padding: 10px;
-  border-radius: 5px;
-  margin-bottom:20px;
+  margin-bottom: 20px;
   background-color: gray;
-  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out; 
-  
+  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out;
 }
 #experience:hover, #education:hover, #skills:hover, #awards:hover, #references:hover {
-  transform: scale(1.05); 
-  background-color: lightgreen; 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+  background-color: lightgreen;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
-section h2 {
-  color: black;
-}
-
 table {
   width: 100%;
   margin: 10px auto;
@@ -154,51 +112,34 @@ td {
   padding: 10px;
   text-align: center;
 }
-
 #hobby1, #hobby2, #hobby3 {
-  display: block; 
-  width: 100%; 
-  margin: 10px 0; 
-  box-sizing: border-box; 
-  border-radius: 10px;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
   padding: 2%;
+  border-radius: 10px;
   text-align: center;
-  min-height: 350px; 
-  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out; 
+  min-height: 350px;
+  box-sizing: border-box;
+  transition: transform 1.5s ease-in-out, background-color 1.5s ease-in-out;
 }
-
-#hobby1 {
+#hobby1, #hobby3 {
   background-color: darkgreen;
   color: white;
-}
-#hobby1:hover {
-  transform: scale(1.05); 
-  background-color: yellow; 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); 
 }
 #hobby2 {
   background-color: yellow;
   color: black;
 }
+#hobby1:hover, #hobby3:hover {
+  transform: scale(1.05);
+  background-color: yellow;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+}
 #hobby2:hover {
-  transform: scale(1.05); 
-  background-color: darkgreen; 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); 
-}
-#hobby3 {
+  transform: scale(1.05);
   background-color: darkgreen;
-  color: white;
-}
-#hobby3:hover {
-  transform: scale(1.05); 
-  background-color: yellow; 
-  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3); 
-}
-@media (max-width: 600px) {
-  #hobby1, #hobby2, #hobby3 {
-    display: block;
-    width: 100%
-  }
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 #header-nav-container {
   display: flex;
@@ -206,7 +147,14 @@ td {
   align-items: center;
   gap: 15px;
   margin-bottom: 20px;
-  width:100%;
-  font: 16px;
-  font-style: bold;
+  width: 100%;
+}
+img {
+  width: 150px;
+  height: 150px;
+}
+@media (max-width: 600px) {
+  #hobby1, #hobby2, #hobby3 {
+    width: 100%;
+  }
 }
