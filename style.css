@@ -17,7 +17,7 @@ header {
   padding: 30px;
   border-radius: 25px;
   margin: 20px auto;
-  width: 90%;
+  width: 80%;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 footer {
@@ -148,7 +148,7 @@ td {
 
 #hobby1, #hobby2, #hobby3 {
   display: block; 
-  width: 60%; 
+  width: 80%; 
   margin: 10px 0; 
   box-sizing: border-box; 
   border-radius: 10px;
