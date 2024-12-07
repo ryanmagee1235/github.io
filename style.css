@@ -207,4 +207,6 @@ td {
   gap: 15px;
   margin-bottom: 20px;
   width:100%;
+  font: 16px;
+  font-style: bold;
 }
